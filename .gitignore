@@ -1,0 +1,4 @@
+
+*.cache
+CarParkSimulator/obj/Debug/CarParkSimulator.csproj.CoreCompileInputs.cache
+.vs/CarParkSimulator/v15/.suo
