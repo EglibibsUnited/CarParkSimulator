@@ -7,5 +7,21 @@ namespace CarParkSimulator
 {
     class Barrier
     {
+        private bool lifted;
+
+        public void Lower()
+        {
+            this.lifted = false;
+        }
+
+        public void Raise()
+        {
+            this.lifted = true;
+        }
+
+        public bool IsLifted()
+        {
+            return this.lifted;
+        }
     }
 }
