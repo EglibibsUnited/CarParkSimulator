@@ -1,0 +1,13 @@
+* no actor (stickmun) on all
+* add simulation interface before first object & after stickmun
+* align methods
+* no arrows need to come back
+
+* objects only communicate with objects that the class diagram allows
+
+* SENSOR
+* no boundary class
+
+* look at code behind for user interface in skeleton program to see what assigncarpark does
+~ don't use assigncarpark in sequence diagram ~
+~ Use the .exe to determine what functions need to do what (what order and what actually happens to the car park things)
