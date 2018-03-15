@@ -13,9 +13,9 @@ namespace CarParkSimulator
         {
             return this.lit;
         }
-        public void SetLit(bool lit)
+        public void SetLit(bool value)
         {
-            this.lit = lit;
+            this.lit = value;
         }
     }
 }

@@ -11,3 +11,5 @@ CarParkSimulator/obj/Debug/CarParkSimulator.csproj.CoreCompileInputs.cache
 *.ide
 *.ide
 *.ide
+*.ide
+*.cache

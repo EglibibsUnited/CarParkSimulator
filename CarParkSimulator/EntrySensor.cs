@@ -7,6 +7,5 @@ namespace CarParkSimulator
 {
     class EntrySensor : Sensor
     {
-
     }
 }

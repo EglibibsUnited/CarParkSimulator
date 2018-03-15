@@ -7,5 +7,21 @@ namespace CarParkSimulator
 {
     class Sensor
     {
+        protected bool carOnSensor;
+
+        public virtual void CarDetected()
+        {
+            carOnSensor = true;
+        }
+
+        public virtual void CarLeftSensor()
+        {
+            carOnSensor = false;
+        }
+
+        public bool IsCarOnSensor()
+        {
+            return this.carOnSensor;
+        }
     }
 }

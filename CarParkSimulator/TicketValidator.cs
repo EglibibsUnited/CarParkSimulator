@@ -9,6 +9,11 @@ namespace CarParkSimulator
     {
         private string message;
 
+        private void CarArrived()
+        {
+            this.message = "Welcome, please enter your ticket.";
+        }
+
         public void ClearMessage()
         {
             this.message = "";
