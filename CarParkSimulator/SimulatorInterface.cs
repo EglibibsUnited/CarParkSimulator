@@ -80,7 +80,6 @@ namespace CarParkSimulator
 
         private void CarArrivesAtExit(object sender, EventArgs e)
         {
-
             UpdateDisplay();
         }
 

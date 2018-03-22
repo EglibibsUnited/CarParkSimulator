@@ -5,7 +5,9 @@ using System.Text;
 
 namespace CarParkSimulator
 {
-    class EntrySensor
+    class EntrySensor : Sensor
     {
+
+    
     }
 }
