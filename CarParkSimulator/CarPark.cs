@@ -8,7 +8,7 @@ namespace CarParkSimulator
     class CarPark
     {
         private int currentSpaces;
-        private int maxSpace;
+        private int maxSpace = 5;
         private TicketMachine ticketMachine;
         private TicketValidator ticketValidator;
         private FullSign fullSign;
@@ -16,6 +16,7 @@ namespace CarParkSimulator
 
         public CarPark(TicketMachine ticketMachine, TicketValidator ticketValidator, FullSign fullSign, Barrier entryBarrier, Barrier exitBarrier)
         {
+            currentSpaces = maxSpace;
             this.ticketMachine = ticketMachine;
             this.ticketValidator = ticketValidator;
             this.fullSign = fullSign;
@@ -36,6 +37,8 @@ namespace CarParkSimulator
         public void CarEnteredCarPark()
         {
             this.currentSpaces--;
+            entryBarrier.Lower();
+            ticketMachine.ClearMessage();
             if (IsFull())
             {
                 fullSign.SetLit(true);
