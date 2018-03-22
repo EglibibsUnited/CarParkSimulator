@@ -8,14 +8,16 @@ namespace CarParkSimulator
     class Sensor
     {
         protected bool carOnSensor;
+        protected CarPark carPark;
 
-        public Sensor()
+        public Sensor(CarPark carPark)
         {
-
+            this.carPark = carPark;
         }
 
         public void CarDetected()
         {
+            carPark.CarArrivedAtEntrance();
             this.carOnSensor = true;
         }
 
@@ -24,7 +26,7 @@ namespace CarParkSimulator
             this.carOnSensor = false;
         }
 
-        protected internal bool IsCarOnSensor()
+        public bool IsCarOnSensor()
         {
             return this.carOnSensor;
         }

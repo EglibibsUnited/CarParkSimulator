@@ -30,7 +30,7 @@ namespace CarParkSimulator
 
         public void TicketDispensed()
         {
-            ticketMachine.PrintTicket();
+            entryBarrier.Raise();
         }
 
         public void CarEnteredCarPark()

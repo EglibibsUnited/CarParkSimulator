@@ -14,8 +14,9 @@ namespace CarParkSimulator
             this.activeTickets = new List<Ticket>();
         }
 
-        public void AddTicket(Ticket ticket)
+        public void AddTicket()
         {
+            Ticket ticket = new Ticket();
             this.activeTickets.Add(ticket);
         }
 
