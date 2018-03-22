@@ -7,5 +7,18 @@ namespace CarParkSimulator
 {
     class TicketMachine
     {
+        //Attributes
+        private string message;
+
+        //Functions
+        public void AssignCarPark()
+        {
+
+        }
+        public void CarArrived()
+        {
+
+        }
+
     }
 }

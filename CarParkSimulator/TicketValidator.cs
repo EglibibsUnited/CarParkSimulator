@@ -7,5 +7,16 @@ namespace CarParkSimulator
 {
     class TicketValidator
     {
+        private string message;
+
+        public void ClearMessage()
+        {
+            this.message = "";
+        }
+
+        public string GetMessage()
+        {
+            return this.message;
+        }
     }
 }

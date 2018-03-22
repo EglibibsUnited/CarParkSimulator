@@ -38,9 +38,9 @@ namespace CarParkSimulator
             activeTickets = new ActiveTickets();
             ticketMachine = new TicketMachine(activeTickets);
             ticketValidator = new TicketValidator(activeTickets);
-            entryBarrier = new Barrier();
-            exitBarrier = new Barrier();
-            fullSign = new FullSign();
+            entryBarrier = new Barrier(); // Done //
+            exitBarrier = new Barrier(); // Done //
+            fullSign = new FullSign(); // Done //
             carPark = new CarPark(ticketMachine, ticketValidator, fullSign, entryBarrier, exitBarrier);
             entrySensor = new EntrySensor(carPark);
             exitSensor = new ExitSensor(carPark);
@@ -99,6 +99,11 @@ namespace CarParkSimulator
 
         private void UpdateDisplay()
         {
+        }
+
+        private void SimulatorInterface_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
