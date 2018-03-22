@@ -7,5 +7,9 @@ namespace CarParkSimulator
 {
     class ExitSensor : Sensor
     {
+        public ExitSensor(CarPark carPark) : base(carPark)
+        {
+
+        }
     }
 }

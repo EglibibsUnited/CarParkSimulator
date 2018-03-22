@@ -7,7 +7,7 @@ namespace CarParkSimulator
 {
     class Ticket
     {
-        private bool paid;
+        private bool paid = false;
 
         void SetPaid(bool paid)
         {

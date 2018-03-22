@@ -63,13 +63,15 @@ namespace CarParkSimulator
         private void CarArrivesAtEntrance(object sender, EventArgs e)
         {
             btnCarArrivesAtEntrance.Visible = false;
-            btnDriverPressesForTicket.Visible = false;
+            btnDriverPressesForTicket.Visible = true;
+            entrySensor.CarDetected();
+
             UpdateDisplay();
         }
 
         private void DriverPressesForTicket(object sender, EventArgs e)
         {
-
+            ticketMachine.PrintTicket();
             UpdateDisplay();
         }
 
@@ -99,6 +101,14 @@ namespace CarParkSimulator
 
         private void UpdateDisplay()
         {
+            lblTicketMachine.Text = ticketMachine.GetMessage();
+            lblTicketValidator.Text = ticketMachine.GetMessage();
+            lblEntrySensor.Text = entrySensor.IsCarOnSensor().ToString();
+            lblEntryBarrier.Text = entryBarrier.IsLifted().ToString();
+            lblExitSensor.Text = exitSensor.IsCarOnSensor().ToString();
+            lblExitBarrier.Text = exitBarrier.IsLifted().ToString();
+            lblFullSign.Text = fullSign.IsLit().ToString();
+            lblSpaces.Text = carPark.GetCurrentSpaces().ToString();
         }
 
         private void SimulatorInterface_Load(object sender, EventArgs e)

@@ -7,7 +7,12 @@ namespace CarParkSimulator
 {
     class EntrySensor : Sensor
     {
+        
 
+        public EntrySensor(CarPark carPark) : base(carPark)
+        {
+
+        }
     
     }
 }

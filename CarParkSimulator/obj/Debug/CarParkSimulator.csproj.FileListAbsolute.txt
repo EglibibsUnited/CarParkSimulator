@@ -1,0 +1,10 @@
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\bin\Debug\CarParkSimulator.exe.config
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\bin\Debug\CarParkSimulator.exe
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\bin\Debug\CarParkSimulator.pdb
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\obj\Debug\CarParkSimulator.csprojResolveAssemblyReference.cache
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\obj\Debug\CarParkSimulator.Properties.Resources.resources
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\obj\Debug\CarParkSimulator.SimulatorInterface.resources
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.GenerateResource.Cache
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\obj\Debug\CarParkSimulator.csproj.CoreCompileInputs.cache
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\obj\Debug\CarParkSimulator.exe
+C:\Users\b7035059\Documents\GitHub\CarParkSimulator\CarParkSimulator\obj\Debug\CarParkSimulator.pdb
