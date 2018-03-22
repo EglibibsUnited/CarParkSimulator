@@ -62,7 +62,8 @@ namespace CarParkSimulator
 
         private void CarArrivesAtEntrance(object sender, EventArgs e)
         {
-
+            btnCarArrivesAtEntrance.Visible = false;
+            btnDriverPressesForTicket.Visible = false;
             UpdateDisplay();
         }
 
