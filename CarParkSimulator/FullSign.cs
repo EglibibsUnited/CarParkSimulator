@@ -15,6 +15,7 @@ namespace CarParkSimulator
         }
         public void SetLit(bool value)
         {
+            
             this.lit = value;
         }
     }
