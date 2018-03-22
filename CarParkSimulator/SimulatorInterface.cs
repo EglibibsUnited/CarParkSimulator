@@ -48,6 +48,7 @@ namespace CarParkSimulator
             ticketMachine.AssignCarPark(carPark);
             ticketValidator.AssignCarPark(carPark);
 
+            
             /////////////////////////////////////////
 
             btnCarArrivesAtEntrance.Visible = true;
@@ -71,13 +72,23 @@ namespace CarParkSimulator
 
         private void DriverPressesForTicket(object sender, EventArgs e)
         {
+            btnDriverPressesForTicket.Visible = false;
+            btnCarEntersCarPark.Visible = true;
             ticketMachine.PrintTicket();
             UpdateDisplay();
         }
 
         private void CarEntersCarPark(object sender, EventArgs e)
         {
-
+            entrySensor.CarLeftSensor();
+            btnCarEntersCarPark.Visible = false;
+            if (!carPark.IsFull())
+            {
+                btnCarArrivesAtEntrance.Visible = true;
+            }
+            btnCarArrivesAtExit.Visible = true;
+            
+            
             UpdateDisplay();
         }
 
@@ -102,7 +113,7 @@ namespace CarParkSimulator
         private void UpdateDisplay()
         {
             lblTicketMachine.Text = ticketMachine.GetMessage();
-            lblTicketValidator.Text = ticketMachine.GetMessage();
+            lblTicketValidator.Text = ticketValidator.GetMessage();
             lblEntrySensor.Text = entrySensor.IsCarOnSensor().ToString();
             lblEntryBarrier.Text = entryBarrier.IsLifted().ToString();
             lblExitSensor.Text = exitSensor.IsCarOnSensor().ToString();

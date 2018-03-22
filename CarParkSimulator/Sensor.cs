@@ -23,6 +23,7 @@ namespace CarParkSimulator
 
         public void CarLeftSensor()
         {
+            carPark.CarEnteredCarPark();
             this.carOnSensor = false;
         }
 
